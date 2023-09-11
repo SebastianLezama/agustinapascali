@@ -24,7 +24,8 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
-const Links = ["HANASAKI 花咲", "Registro Diario", "Meditaciones", "Team"];
+// const Links = ["HANASAKI 花咲", "Registro Diario", "Meditaciones", "Team"];
+const Links = [""];
 const MenuLinks = ["Registro Diario", "Meditaciones", "Ejercicios"];
 
 const hRefTernary = (key) => {

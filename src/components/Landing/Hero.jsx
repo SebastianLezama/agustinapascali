@@ -59,7 +59,7 @@ export default function Hero() {
             Recursos para la gestión de las emociones, la relación con los
             pensamientos, y el afrontamiento a los acontecimientos de la vida.
           </Text>
-          <Stack direction={"row"}>
+          {/* <Stack direction={"row"}>
             <Button
               bg={"teal.500"}
               rounded={"full"}
@@ -76,7 +76,7 @@ export default function Hero() {
             >
               Show me more
             </Button>
-          </Stack>
+          </Stack> */}
         </Stack>
       </VStack>
     </Flex>
