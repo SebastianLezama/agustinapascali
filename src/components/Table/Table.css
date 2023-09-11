@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border-bottom: 0.3pc #dddddd solid;
+  padding: 4px;
+}
+
+.body tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.body tr:hover {
+  background-color: #3fcf8e;
+}

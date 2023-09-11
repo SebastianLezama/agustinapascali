@@ -1,0 +1,72 @@
+.users-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 250px;
+  min-height: 500px;
+
+  padding: 10px;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.users-list {
+  /* align-self: self-start; */
+  text-align: left;
+  padding: 1em;
+}
+
+.user-form {
+  display: flex;
+  padding: 1em;
+  width: 400px;
+}
+
+.contact-form {
+  margin-top: 10px;
+  width: 100%;
+  /* max-width: 35%; #3fcf8e */
+  right: 0;
+
+  /* position: fixed; */
+}
+li {
+  overflow: hidden;
+  display: block;
+  clear: both;
+  /* position: relative; */
+  list-style: none;
+  margin: 0px 8px 5px 8px;
+}
+
+ul {
+  padding: 0;
+  display: inline-block;
+}
+
+input {
+  height: 22px;
+  width: 93%;
+}
+
+.flat-button {
+  color: #fff;
+  height: 60px;
+  width: 90%;
+  font-size: 16px;
+  font-family: "PT Sans Caption", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #3fcf8e;
+  border-radius: 3px;
+  background: #3fcf8e;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.flat-button:hover {
+  background: hsl(154 54.8% 45.1%);
+  color: #222;
+}

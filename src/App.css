@@ -1,0 +1,118 @@
+#root {
+  /* max-width: 1280px; */
+  /* display: flex; */
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  /* background-image: url("https://waouznfjhihauptkfimb.supabase.co/storage/v1/object/sign/Images/kanagawa_1080.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMva2FuYWdhd2FfMTA4MC5qcGciLCJpYXQiOjE2ODUxMTIxOTgsImV4cCI6MTY4NzcwNDE5OH0.M7HjerJ6jZMrlvI7Lp2CeaObg1KLAOfSTFNypZV4sG0&t=2023-05-26T14%3A43%3A17.703Z"); */
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.main {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.App {
+  text-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+/* .NavBar {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  clear: both;
+  justify-content: center;
+
+  height: 80px;
+  padding-top: 3px;
+  padding-left: 2px;
+  z-index: 1;
+} */
+/* 
+.NavBar ul {
+  position: fixed;
+  right: 0;
+}
+
+.NavBar ul li {
+  display: inline;
+  cursor: pointer;
+}
+
+.NavBar ul li button {
+  width: 150px;
+}
+
+.Calendar {
+  height: 800px;
+  width: 1100px;
+}
+*/
+.header {
+  cursor: pointer;
+}
+
+.react-datepicker {
+  font-size: 2em;
+  padding: "3px";
+  height: "302px";
+  margin-top: "18px";
+}
+.react-datepicker__header {
+  padding-top: 0.8em;
+}
+.react-datepicker__month {
+  margin: 0.4em 1em;
+}
+.react-datepicker__day-name,
+.react-datepicker__day {
+  width: 1.9em;
+  line-height: 1.9em;
+  margin: 0.166em;
+}
+.react-datepicker__current-month {
+  font-size: 1.4em;
+}
+.react-datepicker__navigation {
+  top: 1em;
+  line-height: 1.7em;
+  border: 0.45em solid transparent;
+}
+.react-datepicker__navigation--previous {
+  border-right-color: #ccc;
+  left: 1em;
+}
+.react-datepicker__navigation--next {
+  border-left-color: #ccc;
+  right: 1em;
+}
+
+.datepicker {
+  padding: "3px";
+  height: "302px";
+  margin-top: "18px";
+}
