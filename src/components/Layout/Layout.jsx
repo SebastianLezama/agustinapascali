@@ -14,6 +14,7 @@ const Layout = () => {
       <GridItem
         as="main"
         colSpan={{ base: 10, md: 9, lg: 8, xl: 8 }}
+        minW={"300px"}
         // pt="30px"
         // pl="30px"
         // pr="30px"

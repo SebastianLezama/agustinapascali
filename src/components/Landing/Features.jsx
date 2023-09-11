@@ -12,9 +12,9 @@ import {
   Box,
 } from "@chakra-ui/react";
 import {
-  IoAnalyticsSharp,
-  IoLogoBitcoin,
-  IoSearchSharp,
+  IoSchoolSharp,
+  IoTodaySharp,
+  IoBodySharp,
 } from "react-icons/io5";
 import { ReactElement } from "react";
 
@@ -90,7 +90,7 @@ export default function Features() {
               <Feature
                 icon={
                   <Icon
-                    as={IoAnalyticsSharp}
+                    as={IoSchoolSharp}
                     color={"yellow.500"}
                     w={5}
                     h={5}
@@ -101,17 +101,17 @@ export default function Features() {
               />
               <Feature
                 icon={
-                  <Icon as={IoLogoBitcoin} color={"green.500"} w={5} h={5} />
+                  <Icon as={IoTodaySharp} color={"green.500"} w={5} h={5} />
                 }
                 iconBg={useColorModeValue("green.100", "green.900")}
                 text={"Terapia online para todo el mundo"}
               />
               <Feature
                 icon={
-                  <Icon as={IoSearchSharp} color={"purple.500"} w={5} h={5} />
+                  <Icon as={IoBodySharp} color={"purple.500"} w={5} h={5} />
                 }
                 iconBg={useColorModeValue("purple.100", "purple.900")}
-                text={"Market Analysis"}
+                text={"Meditaciones online"}
               />
             </Stack>
           </Stack>
@@ -120,7 +120,7 @@ export default function Features() {
               rounded={"md"}
               alt={"feature image"}
               src={
-                "https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                "https://waouznfjhihauptkfimb.supabase.co/storage/v1/object/sign/Images/ap_avatar.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvYXBfYXZhdGFyLmpwZyIsImlhdCI6MTY5NDQ3NTE5MSwiZXhwIjoxNzI2MDExMTkxfQ.DygQ-VAtbAymwIsHiMCWIB9gXK_V3nWAQ7-s_A1sMJg&t=2023-09-11T23%3A33%3A11.434Z"
               }
               objectFit={"cover"}
             />

@@ -70,13 +70,13 @@ export default function SmallCentered() {
         justify={"center"}
         align={"center"}
       >
-        <Logo />
-        <Stack direction={"row"} spacing={6}>
+        {/* <Logo /> */}
+        {/* <Stack direction={"row"} spacing={6}>
           <Link href={"#"}>Home</Link>
           <Link href={"#"}>About</Link>
           <Link href={"#"}>Blog</Link>
           <Link href={"#"}>Contact</Link>
-        </Stack>
+        </Stack> */}
       </Container>
 
       <Box
@@ -93,15 +93,15 @@ export default function SmallCentered() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2022 Chakra Templates. All rights reserved</Text>
+          <Text>© 2023 s.a.l.dev</Text>
           <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Twitter"} href={"#"}>
+            {/* <SocialButton label={"Twitter"} href={"#"}>
               <FaTwitter />
             </SocialButton>
             <SocialButton label={"YouTube"} href={"#"}>
               <FaYoutube />
-            </SocialButton>
-            <SocialButton label={"Instagram"} href={"#"}>
+            </SocialButton> */}
+            <SocialButton label={"Instagram"} href={"https://www.instagram.com/agustinapascali/"} target={"_blank"}>
               <FaInstagram />
             </SocialButton>
           </Stack>
