@@ -11,7 +11,8 @@ import Invite from "./pages/Invite";
 import AdminRoute from "./components/AdminRoute";
 import Profile from "./pages/Profile";
 import LoggedInRoute from "./components/LoggedInRoute";
-import Media from "./pages/media";
+import Media from "./pages/Media";
+import Exercices from "./pages/Exercises";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="log" element={<Log />} />
             <Route path="profile" element={<Profile />} />
             <Route path="audio" element={<Media />} />
+            <Route path="exercise" element={<Exercices />} />
           </Route>
 
           {/*  admin in routes */}

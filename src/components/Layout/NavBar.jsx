@@ -25,7 +25,7 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 // const Links = ["HANASAKI 花咲", "Registro Diario", "Meditaciones", "Team"];
-const Links = [""];
+const Links = ["Meditaciones", "Ejercicios"];
 const MenuLinks = ["Registro Diario", "Meditaciones", "Ejercicios"];
 
 const hRefTernary = (key) => {
@@ -63,7 +63,7 @@ const NavLinkss = ({ children }) => (
   </Link>
 );
 
-const NavBAr = () => {
+const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const navigate = useNavigate();
   const { admin, isLoggedIn, user } = useAuth();
@@ -134,8 +134,20 @@ const NavBAr = () => {
                   </MenuItem>
                 ))}
                 <MenuDivider />
-                <MenuItem>
-                  <NavLink to="profile">Mi perfil</NavLink>
+                <MenuItem padding={0}>
+                <Link
+                      href={"profile"}
+                      width={"100%"}
+                      py={"6px"}
+                      px={"12px"}
+                      _hover={{
+                        textDecoration: "none",
+                        // textColor: "white",
+                        // bg: useColorModeValue("teal.500", "gray.700"),
+                      }}
+                      >
+                        Mi perfil
+                        </Link>
                 </MenuItem>
               </MenuList>
               {isLoggedIn ? (
@@ -193,4 +205,4 @@ const NavBAr = () => {
   );
 };
 
-export default NavBAr;
+export default NavBar;
