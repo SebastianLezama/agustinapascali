@@ -101,7 +101,7 @@ const DailyLogForm = ({
             mx={{ base: "0px", lg: "35px" }}
             textAlign={"center"}
           >
-            <FormControl onSubmit={handleSubmit}>
+            <FormControl onSubmit={handleSubmit} id="log-form">
               {emociones.map((e) => (
                 <RadioGroup
                   key={e.name}
