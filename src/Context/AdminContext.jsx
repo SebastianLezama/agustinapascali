@@ -150,7 +150,7 @@ function useProvideAdmin() {
       const events = getEventsFromCalendar(CALENDAR_ID, API_KEY);
       setCalendarEvents(events);
     }
-    // localStorage.setItem("calendarEvents", JSON.stringify(events));
+    localStorage.setItem("calendarEvents", JSON.stringify(events));
 
     // getListFromYouTube(CLIENT_ID, API_KEY)
   }, []);
