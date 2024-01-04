@@ -11,10 +11,10 @@ import Invite from "./pages/Invite";
 import AdminRoute from "./components/AdminRoute";
 import Profile from "./pages/Profile";
 import LoggedInRoute from "./components/LoggedInRoute";
+import Media from "./pages/media";
 
 function App() {
   return (
-    <>
       <Routes>
         <Route path="/" element={<Layout />}>
           {/*  public in routes */}
@@ -24,6 +24,7 @@ function App() {
           <Route element={<LoggedInRoute />}>
             <Route path="log" element={<Log />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="audio" element={<Media />} />
           </Route>
 
           {/*  admin in routes */}
@@ -36,7 +37,6 @@ function App() {
           </Route>
         </Route>
       </Routes>
-    </>
   );
 }
 

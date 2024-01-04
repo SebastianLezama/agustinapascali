@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import ProfileCard from "../components/Profile/ProfileCard";
 import {
   Box,

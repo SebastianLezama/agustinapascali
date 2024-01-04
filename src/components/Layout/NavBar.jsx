@@ -50,6 +50,7 @@ const NavLinkss = ({ children }) => (
     px={2}
     py={1}
     rounded={"md"}
+    width={"100%"}
     // textColor="white"
     _hover={{
       textDecoration: "none",
@@ -116,17 +117,20 @@ const NavBAr = () => {
               </MenuButton>
               <MenuList zIndex={"100"} textColor={"black"}>
                 {MenuLinks.map((link) => (
-                  <MenuItem key={link}>
-                    <NavLink
-                      to={hRefTernary(link)}
+                  <MenuItem key={link} padding={0}>
+                    <Link
+                      href={hRefTernary(link)}
+                      width={"100%"}
+                      py={"6px"}
+                      px={"12px"}
                       _hover={{
                         textDecoration: "none",
-                        textColor: "white",
+                        // textColor: "white",
                         // bg: useColorModeValue("teal.500", "gray.700"),
                       }}
                     >
                       {link}
-                    </NavLink>
+                    </Link>
                   </MenuItem>
                 ))}
                 <MenuDivider />
