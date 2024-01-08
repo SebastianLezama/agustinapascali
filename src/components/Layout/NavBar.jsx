@@ -27,9 +27,30 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 // const Links = ["HANASAKI 花咲", "Registro Diario", "Meditaciones", "Team"];
 // const Links = ["Meditaciones", "Ejercicios"];
 const Links = [""]
-const MenuLinks = ["Registro Diario", "Meditaciones", "Ejercicios"];
+let MenuLinks = [""]
+
+const NavLinkss = ({ children }) => (
+  <Link
+  px={2}
+  py={1}
+  rounded={"md"}
+  width={"100%"}
+  // textColor="white"
+    _hover={{
+      textDecoration: "none",
+      textColor: "white",
+      bg: useColorModeValue("teal.500", "gray.700"),
+    }}
+    href={hRefTernary(children)}
+    >
+    {children}
+  </Link>
+);
 
 const hRefTernary = (key) => {
+  if (key === "Calendario") {
+    return "admin";
+  }
   if (key === "Registro Diario") {
     return "log";
   }
@@ -46,28 +67,18 @@ const hRefTernary = (key) => {
   }
 };
 
-const NavLinkss = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={"md"}
-    width={"100%"}
-    // textColor="white"
-    _hover={{
-      textDecoration: "none",
-      textColor: "white",
-      bg: useColorModeValue("teal.500", "gray.700"),
-    }}
-    href={hRefTernary(children)}
-  >
-    {children}
-  </Link>
-);
-
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const navigate = useNavigate();
   const { admin, isLoggedIn, user } = useAuth();
+  if (admin) {
+
+    MenuLinks = ["Calendario", "Meditaciones", "Ejercicios"];
+  } else {
+
+    MenuLinks = ["Registro Diario", "Meditaciones", "Ejercicios"];
+  }
+  
 
   return (
     <>
@@ -98,10 +109,8 @@ const NavBar = () => {
             <Menu>
               <MenuButton
                 as={Button}
-                // rounded={"full"}
                 variant={"link"}
                 cursor={"pointer"}
-                // minW={0}
                 _hover={{
                   textDecoration: "none",
                   textColor: "white",
@@ -188,21 +197,6 @@ const NavBar = () => {
 
       {/* <Box p={4}>Main Content Here</Box> */}
     </>
-    // <Flex as="nav" gap="10px" alignItems="center" mb="40px">
-    //   <Spacer />
-    //   <HStack spacing="40px">
-    //     {/* {auth?.admin === null ? (
-    //       <Box className="header" onClick={() => navigate("/log")}>
-    //         LOG
-    //       </Box>
-    //     ) : (
-    //       <Box className="header" onClick={() => navigate("/admin/users")}>
-    //         USERS
-    //       </Box>
-    //     )} */}
-
-    //   </HStack>
-    // </Flex>
   );
 };
 

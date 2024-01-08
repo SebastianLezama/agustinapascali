@@ -1,24 +1,22 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridMonth from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
-import { gapi } from "gapi-script";
 import { getTableByEmail } from "../components/SupabaseClient";
 import Modal from "../components/Modal";
 import "./Calendar.css";
-import { Box } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 import esLocale from "@fullcalendar/core/locales/es";
 import { useAdminData } from "../Context/AdminContext";
 
 function Calendar() {
   const [currentEvent, setCurrentEvent] = useState([]);
-
   const [logInfo, setLogInfo] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
   const modalRef = useRef();
-  const [showModal, setShowModal] = useState(false);
 
   const { calendarEvents } = useAdminData();
 
@@ -44,6 +42,8 @@ function Calendar() {
       5000
     );
     setCurrentEvent(await getTableByEmail("Users", currentEvent.email));
+    console.log(currentEvent)
+    setShowModal(true)
   };
 
   const closeModal = (e) => {
@@ -51,13 +51,15 @@ function Calendar() {
   };
 
   return (
-    <>
+    <Container maxW={{ base: null, lg: "6xl", xl: "8xl" }} py={12} h={"90vh"}>
+
+
       {/* <div className="main-calendar"> */}
       <Box
         mx={{ base: "10px", md: "30px", lg: "55px", xl: "80px" }}
         my={"20px"}
         minW={"450px"}
-      >
+        >
         <FullCalendar
           plugins={[
             dayGridMonth,
@@ -77,12 +79,11 @@ function Calendar() {
           eventClick={eventClick}
           events={calendarEvents}
           height="700px"
-          minW="450px"
           // width="100%"
           weekends={false}
           slotMinTime="10:00:00"
           slotMaxTime="21:00:00"
-        />
+          />
       </Box>
       {/* </div> */}
       <Modal
@@ -91,8 +92,8 @@ function Calendar() {
         closeModal={closeModal}
         logInfo={logInfo}
         currentEvent={currentEvent}
-      />
-    </>
+        />
+  </Container>
   );
 }
 

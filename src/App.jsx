@@ -29,7 +29,7 @@ function App() {
             <Route path="exercise" element={<Exercices />} />
           </Route>
 
-          {/*  admin in routes */}
+          {/*  admin routes */}
           <Route element={<AdminRoute />}>
             {/* <Route path="/" element={<Home />} /> */}
             <Route path="admin" element={<Calendar />} />

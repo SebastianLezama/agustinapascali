@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import Picker from "../Picker";
+import PropTypes from 'prop-types';
 import {
   Box,
   Button,
@@ -7,19 +7,13 @@ import {
   Flex,
   FormControl,
   FormLabel,
-  Grid,
-  GridItem,
   HStack,
   Input,
   Radio,
   RadioGroup,
-  Spacer,
   Textarea,
-  Wrap,
   useColorModeValue,
-  useRadioGroup,
 } from "@chakra-ui/react";
-import LogRadio from "./LogRadio";
 
 const DailyLogForm = ({
   handleChange,
@@ -44,10 +38,12 @@ const DailyLogForm = ({
     { name: "Sorpresa" },
   ];
 
-  const { value, getRadioProps, getRootProps } = useRadioGroup({
-    defaultValue: "0",
-    onChange: handleChange,
-  });
+  // const { value, getRadioProps, getRootProps } = useRadioGroup({
+  //   defaultValue: "0",
+  //   onChange: handleChange,
+  // });
+
+  
 
   return (
     // <Box justify="center" pt={"20px"}>
@@ -178,5 +174,19 @@ const DailyLogForm = ({
     </Container>
   );
 };
+
+DailyLogForm.propTypes = {
+    valor: PropTypes.any,
+    handleChange: PropTypes.func.isRequired,
+    handleDateChange: PropTypes.func.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
+    handleRadio: PropTypes.func.isRequired,
+    isRadioSelected: PropTypes.bool,
+    isFormFilled: PropTypes.bool,
+    formData: PropTypes.object.isRequired,
+    setFormData: PropTypes.func.isRequired,
+    startDate: PropTypes.string.isRequired,
+    logData: PropTypes.object.isRequired,
+}
 
 export default DailyLogForm;

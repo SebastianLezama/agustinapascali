@@ -11,9 +11,9 @@ const LogIn = () => {
 
   useEffect(() => {
     if (isLoggedIn) {
-      console.log("1");
+      console.log("user");
       if (admin) {
-        console.log("2");
+        console.log("admin");
         navigate("/admin");
       } else {
         navigate("/");

@@ -71,11 +71,7 @@ function useProvideAuth() {
   };
 
   const checkIsLoggedIn = () => {
-    if (sessionUser?.id !== undefined) {
-      return true;
-    } else {
-      return false;
-    }
+    return sessionUser?.id !== undefined;
   };
   const [isLoggedIn, setIsLoggedIn] = useState(checkIsLoggedIn());
 

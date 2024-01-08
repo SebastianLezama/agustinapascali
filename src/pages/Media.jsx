@@ -5,14 +5,17 @@ import {
   Text,
   Stack,
   Container,
-  Avatar,
   useColorModeValue,
-  HStack,
-  Spacer,
 } from "@chakra-ui/react";
+import PropTypes from 'prop-types';
 
 const Testimonial = ({ children }) => {
-  return <Box>{children}</Box>;
+  return (
+    <Box 
+      maxW={"350px"}
+      p={"10px"}
+      // paddingLeft={"50px"}
+      >{children}</Box>)
 };
 
 const TestimonialContent = ({ children }) => {
@@ -96,18 +99,37 @@ const Media = () => {
     'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.', 
     'avatar': "https://www.youtube.com/embed/TNGGLjAVuiE", 
     'name': 'Titulo 3', 
-    'title': 'texto 3'}, 
+    'title': 'texto 3'},
+    {'heading': 'Meditacion 4', 
+    'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.', 
+    'avatar': "https://www.youtube.com/embed/TNGGLjAVuiE", 
+    'name': 'Titulo 4', 
+    'title': 'texto 4'}, 
+    {'heading': 'Meditacion 5', 
+    'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.', 
+    'avatar': "https://www.youtube.com/embed/TNGGLjAVuiE", 
+    'name': 'Titulo 5', 
+    'title': 'texto 5'}, 
+    {'heading': 'Meditacion 6', 
+    'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.', 
+    'avatar': "https://www.youtube.com/embed/TNGGLjAVuiE", 
+    'name': 'Titulo 6', 
+    'title': 'texto 6'}, 
   ]
   
   return (
     <Container maxW={{ base: null, lg: "6xl", xl: "8xl" }} py={12} h={"90vh"}>
       <Box bg={useColorModeValue("gray.100", "gray.700")} borderRadius={"5px"}>
-        <Container maxW={"7xl"} py={16} as={Stack} spacing={12}>
-          <HStack spacing={0} align={"center"}>
+        <Container maxW={"7xl"} py={16} as={Stack} spacing={12} alignContent={"center"}
+            alignItems={"center"}>
+          {/* <HStack spacing={0} align={"center"}>
             
-          </HStack>
+          </HStack> */}
           <Stack
             direction={{ base: "column", md: "row" }}
+            flexWrap={{ base: "wrap"}}
+            justify={"center"}
+            // flexDirection={"row"}
             spacing={{ base: 10, md: 4, lg: 10 }}
           >
             {videos.map((e)=>{
