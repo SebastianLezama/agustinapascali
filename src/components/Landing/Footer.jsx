@@ -1,14 +1,16 @@
 import {
   Box,
+  Button,
   chakra,
   Container,
+  Image,
   Link,
   Stack,
   Text,
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
 
 const Logo = (props) => {
@@ -36,8 +38,8 @@ const SocialButton = ({ children, label, href }) => {
     <chakra.button
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
       rounded={"full"}
-      w={8}
-      h={8}
+      w={12}
+      h={12}
       cursor={"pointer"}
       as={"a"}
       href={href}
@@ -53,7 +55,9 @@ const SocialButton = ({ children, label, href }) => {
       {children}
     </chakra.button>
   );
-};
+}
+
+const text = "Hola! Te contacto desde tu pagina para una consulta. Mi nombre es "
 
 export default function SmallCentered() {
   return (
@@ -101,8 +105,23 @@ export default function SmallCentered() {
             <SocialButton label={"YouTube"} href={"#"}>
               <FaYoutube />
             </SocialButton> */}
+            <Button
+                  as={Link}
+                  rightIcon={<Image alt='whatsapp' src={"https://icongr.am/fontawesome/whatsapp.svg?size=30&color=ffffff" } />}
+                  isExternal
+                  href={`https://wa.me/5491121721711?text=${encodeURIComponent(text)}`}
+                  bgColor={useColorModeValue("blackAlpha.200", "whiteAlpha.200")}
+                  w={"fit-content"}
+                  // minW={"220px"}
+                  _hover={{ textDecoration: "None" }}
+                >
+                  Contactame por WhatsApp
+                </Button>
             <SocialButton label={"Instagram"} href={"https://www.instagram.com/agustinapascali/"} target={"_blank"}>
               <FaInstagram />
+            </SocialButton>
+            <SocialButton label={"Linkedin"} href={"https://ar.linkedin.com/in/agustina-pascali-175b90a5"} target={"_blank"}>
+              <FaLinkedin />
             </SocialButton>
           </Stack>
         </Container>

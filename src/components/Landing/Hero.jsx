@@ -40,24 +40,24 @@ export default function Hero() {
         px={useBreakpointValue({ base: 4, md: 8 })}
         bgGradient={"linear(to-r, blackAlpha.400, transparent)"}
       >
-        <Stack maxW={"4xl"} align={"flex-start"} spacing={6}>
+        <Stack maxW={"6xl"} align={"flex-start"} spacing={6}>
           <Text
             color={"white"}
             fontWeight={400}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
-            Un espacio de exploración y transformación personal.
+            Te invito a crear un espacio de exploración y transformación personal.
           </Text>
           <Spacer></Spacer>
           <Text
             color={"white"}
             fontWeight={400}
             lineHeight={1.2}
+            spacing={6}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
-            Recursos para la gestión de las emociones, la relación con los
-            pensamientos, y el afrontamiento a los acontecimientos de la vida.
+            Te ofrezco recursos para gestionar efectivamente tus emociones, mejorar la relación con tus pensamientos y afrontar asertivamente los acontecimientos de la vida.
           </Text>
           {/* <Stack direction={"row"}>
             <Button

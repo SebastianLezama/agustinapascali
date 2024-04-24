@@ -25,13 +25,13 @@ import { ReactElement } from "react";
 // }
 
 const text =
-  "Soy Agustina, psicóloga clínica especializada en terapias de tercera generación (MN N° 68460).    Me gradué en la Universidad Favaloro, y luego continué mi formación académica en Fundación FORO, dónde me especialicé en los siguientes modelos psicoterapéuticos: DBT (Terapia Dialéctico Comportamental), ACT (Terapia de Aceptación y Compromiso) y Mindfulness. Éstos modelos son emergentes de la tradición conductual, y cuentan con soporte empírico.";
+  "Soy Agustina Pascali, Licenciada en Psicología especializada en Psicoterapias Contextuales (MN N° 68460). Me gradué en el 2017 en la Universidad Favaloro, y luego continué mi formación en Fundación FORO donde me interioricé en la Terapia Dialéctico Comportamental (DBT), la Terapia de Aceptación y Compromiso (ACT) y Mindfulness en Psicoterapia. También he sido coordinadora de grupos de habilidades DBT. Todos estos modelos son emergentes de la Psicología Conductual Contextual y cuentan con soporte empírico.";
 
 const text2 =
-  "Creé éste espacio para ofrecer herramientas específicas, complementarias al trabajo en terapia: regístros, meditaciones, ejercicios y más.";
+  "En el último tiempo también me he interesado en estudiar el uso de hongos psicodélicos y adaptógenos con fines terapéuticos, un tema que se encuentra a la vanguardia de la investigación actual. Buscando integrar saberes ancestrales a las prácticas más modernas, con el propósito de ampliar mi perspectiva hacia una visión holística del ser humano. \nActualmente estoy realizando una especialización en la Terapia Integrativa de Parejas (IBCT) en el Centro Argentino de Terapias Contextuales.";
 
 const text3 =
-  "Actualmente brindo mi servicio de psicoterapia de manera remota para todo el mundo.";
+  "Ofrezco mi servicio de psicoterapia de manera remota para todo el mundo.";
 
 const Feature = ({ text, icon, iconBg }) => {
   return (
@@ -97,7 +97,7 @@ export default function Features() {
                   />
                 }
                 iconBg={useColorModeValue("yellow.100", "yellow.900")}
-                text={"Psicóloga Conductual"}
+                text={"Psicóloga Contextual"}
               />
               <Feature
                 icon={
@@ -106,13 +106,13 @@ export default function Features() {
                 iconBg={useColorModeValue("green.100", "green.900")}
                 text={"Terapia online para todo el mundo"}
               />
-              <Feature
+              {/* <Feature
                 icon={
                   <Icon as={IoBodySharp} color={"purple.500"} w={5} h={5} />
                 }
                 iconBg={useColorModeValue("purple.100", "purple.900")}
                 text={"Meditaciones online"}
-              />
+              /> */}
             </Stack>
           </Stack>
           <Flex>
@@ -120,7 +120,7 @@ export default function Features() {
               rounded={"md"}
               alt={"feature image"}
               src={
-                "https://waouznfjhihauptkfimb.supabase.co/storage/v1/object/sign/Images/ap_avatar.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvYXBfYXZhdGFyLmpwZyIsImlhdCI6MTY5NDQ3NTE5MSwiZXhwIjoxNzI2MDExMTkxfQ.DygQ-VAtbAymwIsHiMCWIB9gXK_V3nWAQ7-s_A1sMJg&t=2023-09-11T23%3A33%3A11.434Z"
+                "https://waouznfjhihauptkfimb.supabase.co/storage/v1/object/sign/Images/IMG_6722.JPG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvSU1HXzY3MjIuSlBHIiwiaWF0IjoxNzEzOTE2OTg4LCJleHAiOjE3NDU0NTI5ODh9.CdWgjg3XPZRz5wVz-Kg4u9pj1QQD24of1ajwQD3ylwI&t=2024-04-24T00%3A03%3A08.940Z"
               }
               objectFit={"cover"}
             />
