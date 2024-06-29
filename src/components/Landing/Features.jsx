@@ -25,10 +25,10 @@ import { ReactElement } from "react";
 // }
 
 const text =
-  "Soy Agustina Pascali, Licenciada en Psicología especializada en Psicoterapias Contextuales (MN N° 68460). Me gradué en el 2017 en la Universidad Favaloro, y luego continué mi formación en Fundación FORO donde me interioricé en la Terapia Dialéctico Comportamental (DBT), la Terapia de Aceptación y Compromiso (ACT) y Mindfulness en Psicoterapia. También he sido coordinadora de grupos de habilidades DBT. Todos estos modelos son emergentes de la Psicología Conductual Contextual y cuentan con soporte empírico.";
+  "Soy Agustina Pascali, Licenciada en Psicología, especializada en Psicoterapias Contextuales (MN N° 68460). Me gradué en el año 2017, en la Universidad Favaloro, y luego continué mi formación en Fundación FORO donde me interioricé en la Terapia Dialéctico Comportamental (DBT), la Terapia de Aceptación y Compromiso (ACT) y Mindfulness en Psicoterapia. También he sido coordinadora de grupos de habilidades DBT. Y posteriormente, me he capacitado en la Terapia Integrativa de Parejas (IBCT) en el Centro Argentino de Terapias Contextuales. Todos estos modelos de Psicoterapia son emergentes de la Psicología Conductual Contextual y cuentan con soporte empírico.";
 
 const text2 =
-  "En el último tiempo también me he interesado en estudiar el uso de hongos psicodélicos y adaptógenos con fines terapéuticos, un tema que se encuentra a la vanguardia de la investigación actual. Buscando integrar saberes ancestrales a las prácticas más modernas, con el propósito de ampliar mi perspectiva hacia una visión holística del ser humano. \nActualmente estoy realizando una especialización en la Terapia Integrativa de Parejas (IBCT) en el Centro Argentino de Terapias Contextuales.";
+  "En el último tiempo también me he interesado en estudiar el uso de hongos psicodélicos y adaptógenos con fines terapéuticos, un tema que se encuentra a la vanguardia de la investigación actual. Buscando integrar saberes ancestrales a las prácticas más modernas, con el propósito de ampliar mi perspectiva hacia una visión holística del ser humano.";
 
 const text3 =
   "Ofrezco mi servicio de psicoterapia de manera remota para todo el mundo.";
