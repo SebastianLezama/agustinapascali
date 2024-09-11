@@ -20,7 +20,7 @@ const image4URL =
   "https://waouznfjhihauptkfimb.supabase.co/storage/v1/object/sign/Images/Imagen%20para%20landing%207.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvSW1hZ2VuIHBhcmEgbGFuZGluZyA3LndlYnAiLCJpYXQiOjE2ODg1OTMwNDMsImV4cCI6MTcyMDEyOTA0M30.KcCtzAPgs-QZ1mHEioiE1t3dSZyEkq2E2HX1f0qHcwc&t=2023-07-05T21%3A37%3A24.315Z";
 
 const image5URL =
-  "https://waouznfjhihauptkfimb.supabase.co/storage/v1/object/sign/Images/tulips-gdb0eec79e_1920.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvdHVsaXBzLWdkYjBlZWM3OWVfMTkyMC5qcGciLCJpYXQiOjE2ODg1OTMzMTMsImV4cCI6MTcyMDEyOTMxM30.f3L1q6OcffVI_VM3JiORXfWYXsFPLkCuFo5vKE2X2Rw&t=2023-07-05T21%3A41%3A53.622Z";
+  "https://waouznfjhihauptkfimb.supabase.co/storage/v1/object/sign/Images/tulips-gdb0eec79e_1920.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvdHVsaXBzLWdkYjBlZWM3OWVfMTkyMC5qcGciLCJpYXQiOjE3MjYwNjI5NzUsImV4cCI6MTc1NzU5ODk3NX0.z42KIk8_q9OdjUuE1prTKyeX3Ch7tSWxR2hemUGvztw&t=2024-09-11T13%3A56%3A15.438Z";
 
 export default function Hero() {
   return (
