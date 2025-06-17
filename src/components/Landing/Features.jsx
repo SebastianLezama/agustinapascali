@@ -24,6 +24,8 @@ import { ReactElement } from "react";
 //   icon?: ReactElement;
 // }
 
+const featureImage = "https://waouznfjhihauptkfimb.supabase.co/storage/v1/object/sign/Images/IMG_6722.JPG?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iMDUwNzU1Mi1iNTNlLTQ1ZmItYmUzNi1mN2U0MDM4OWMyZWQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJJbWFnZXMvSU1HXzY3MjIuSlBHIiwiaWF0IjoxNzUwMjAwMjg4LCJleHAiOjE5MDc4ODAyODh9.2LsSVKNyswDP2JzAIuCpP-eRkRox3WoewTUnan1h5o0"
+
 const text =
   "Soy Agustina Pascali, Licenciada en Psicología, especializada en Psicoterapias Contextuales (MN N° 68460). Me gradué en el año 2017, en la Universidad Favaloro, y luego continué mi formación en Fundación FORO donde me interioricé en la Terapia Dialéctico Comportamental (DBT), la Terapia de Aceptación y Compromiso (ACT) y Mindfulness en Psicoterapia. También he sido coordinadora de grupos de habilidades DBT. Y posteriormente, me he capacitado en la Terapia Integrativa de Parejas (IBCT) en el Centro Argentino de Terapias Contextuales. Todos estos modelos de Psicoterapia son emergentes de la Psicología Conductual Contextual y cuentan con soporte empírico.";
 
@@ -120,7 +122,7 @@ export default function Features() {
               rounded={"md"}
               alt={"feature image"}
               src={
-                "https://waouznfjhihauptkfimb.supabase.co/storage/v1/object/sign/Images/IMG_6722.JPG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJbWFnZXMvSU1HXzY3MjIuSlBHIiwiaWF0IjoxNzEzOTE2OTg4LCJleHAiOjE3NDU0NTI5ODh9.CdWgjg3XPZRz5wVz-Kg4u9pj1QQD24of1ajwQD3ylwI&t=2024-04-24T00%3A03%3A08.940Z"
+                {featureImage}
               }
               objectFit={"cover"}
             />
