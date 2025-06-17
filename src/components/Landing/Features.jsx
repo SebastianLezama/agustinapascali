@@ -122,7 +122,7 @@ export default function Features() {
               rounded={"md"}
               alt={"feature image"}
               src={
-                {featureImage}
+                featureImage
               }
               objectFit={"cover"}
             />
